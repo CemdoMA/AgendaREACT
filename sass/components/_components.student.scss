@@ -1,0 +1,53 @@
+$margin: 5px;
+$margin0: 0 auto;
+$padding0: 0;
+
+.student {
+  transition: 0.1s all ease-in-out;
+  background: #9da0a4;
+  width: 350px;
+  min-height: 10px;
+  margin-bottom: $margin;
+  color: black;
+  padding: $margin;
+  position: relative;
+  cursor: pointer;
+
+
+  &__name {
+    display: inline;
+    position: absolute;
+    margin-right: 30px;
+    
+  }
+
+  &__age {
+    display: inline;
+    background: #876532;
+    padding: $margin;
+    margin-left: 120px;
+  }
+    
+ &__adress {
+    padding: $margin;
+    display: inline;
+    background: #879865;
+    margin-left: 10px;
+  }
+
+  &__delete {
+    position: absolute;
+    padding: $margin;
+    display: inline;
+    top: 0px;
+    right:0px;
+    cursor: pointer;
+    background: red;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+
+}
